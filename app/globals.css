@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white;
+  }
+}
+
+@layer components {
+  .navegacion {
+    @apply sticky top-0 flex justify-start w-full h-24 pl-10 bg-primary;
+  }
+
+  .navegacion h1 {
+    @apply my-auto text-3xl font-extrabold text-secondary;
+  }
+
+  .inicio {
+    @apply h-3/6 mx-auto mt-20 mb-10 flex gap-16 flex-col items-center
+  }
+
+  .inicio h1 {
+    @apply text-5xl font-bold text-primary text-center
+  }
+
+  .inicio h2 {
+    @apply text-2xl font-semibold text-secondary text-center w-1/2
+  }
+
+  .acercade {
+    @apply max-w-screen-xl mx-auto flex flex-col gap-2
+  }
+  
+  .acercade h1 {
+    @apply text-xl font-semibold text-primary text-start
+  }
+
+  .acercade p {
+    @apply text-lg font-medium text-black text-start
+  }
+
+  .acercade hr{
+    @apply border-2 border-gray-100
+  }
+  
+}
